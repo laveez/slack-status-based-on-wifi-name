@@ -121,7 +121,7 @@ setInterval(function() {
     // if (newWiFiName === wiFiName && newIpAddress === ipAddress) {
     if (newWiFiName === wiFiName) {
         console.log('Status not changed');
-        return;
+        //return;
     }
     //ipAddress = newIpAddress;
     wiFiName = newWiFiName;
