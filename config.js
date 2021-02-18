@@ -1,20 +1,25 @@
 module.exports = {
     slackToken: process.env["SLACK_TOKEN"], // xoxp-...
     statusByWiFiName: {
-        "Home": {
+        "Home_SSID": {
             "status_text": "Working remotely",
-            "status_emoji": ":house:"
+            "status_emoji": ":house:",
+            "status_expiration": 0
         },
-        "Office": {
+        "Office_SSID": {
             "status_text": "In the office",
-            "status_emoji": ":office:"
-        }
-    },
-    statusByIpAddress: {
-        "10.0.0.1": { // office - clear status
+            "status_emoji": ":office:",
+            "status_expiration": 0
+        },
+        "Mobile_SSID": {
+            "status_text": "In the office",
+            "status_emoji": ":office:",
+            "status_expiration": 0
+        },
+        "clearStatus": {
             "status_text": "",
-            "status_emoji": ""
+            "status_emoji": "",
         }
     },
-    updateInterval: 1000 // every second
+    updateInterval: 60000 // every second
 }
